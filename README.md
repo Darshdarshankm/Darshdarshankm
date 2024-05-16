@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show + Tell</title>
+<style>
+  /* CSS for background image */
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('uploaded_background_image.jpg'); /* Update with your uploaded background image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+
+  /* CSS for overlay to enhance readability of content */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Behind other content */
+  }
+
+  /* CSS for content positioning */
+  .container {
+    position: relative;
+    z-index: 1; /* Above the overlay */
+    padding: 20px;
+  }
+
+  /* CSS for "Show + Tell" */
+  .show-tell {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s; /* Added transition for smooth movement */
+    z-index: 9999; /* Ensuring it's on top of other elements */
+  }
+
+  /* CSS for navigation links */
+  .navigation {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: Arial, sans-serif;
+    transition: top 0.3s; /* Added transition for smooth movement */
+    z-index: 9999; /* Ensuring it's on top of other elements */
+  }
+
+  /* CSS for styling navigation links */
+  .navigation a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Reduced font size */
+    float: right; /* Align to the right */
+  }
+
+  /* CSS for hover effect on navigation links */
+  .navigation a:hover {
+    background-color: #e0e0e0;
+  }
+
+  /* Clearfix to prevent overlapping */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* CSS for arrow */
+  .arrow {
+    float: right;
+    margin-top: 14px;
+    margin-right: 5px;
+  }
+
+  /* CSS for submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Adjust the submenu position */
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* CSS for submenu links */
+  .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  /* CSS for video container */
+  .video-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: calc(50% - 15px); /* Adjust width to half minus margin */
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* CSS for video */
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* CSS for description */
+  .description {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: calc(50% - 15px); /* Adjust width to half minus margin */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+  <!-- Overlay for enhancing readability -->
+  <div class="overlay"></div>
+
+  <!-- Content container -->
+  <div class="container">
+    <!-- HTML for "Show + Tell" -->
+    <div class="show-tell">Show + Tell</div>
+
+    <!-- HTML for navigation links -->
+    <div class="navigation clearfix">
+      <a href="#">Work</a>
+      <a href="#">Studio</a>
+      <div class="services">
+        <a href="#">Services</a>
+        <div class="submenu">
+          <a href="#">Branding</a>
+          <a href="#">Websites & digital product</a>
+          <a href="#">Immersive</a>
+        </div>
+      </div>
+      <a href="#">Insights</a>
+      <a href="#" class="careers-link">Careers</a>
+      <div class="careers submenu">
+        <a href="#">Energy & Utility</a>
+        <a href="#">Retail & Commerce</a>
+        <a href="#">Investment Time</a>
+        <a href="#">Food & Manufacturing</a>
+        <a href="#">SaaS & Technology</a>
+        <a href="#">Properties</a>
+        <a href="#">Development & Protech</a>
+      </div>
+      <div class="start-project">
+        <div style="float: right; margin-left: 10px;">Start a Project</div>
+        <div class="arrow">▶</div>
+      </div>
+    </div>
+
+    <!-- HTML for video container -->
+    <div class="video-container">
+      <video controls>
+        <source src="your_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- HTML for description -->
+    <div class="description">
+      Digital first branding & web product agency expertly creating impactful experiences for high-growth brands
+    </div>
+
+    <!-- Links to directories on the next page -->
+    <div>
+      <img src="C:\Users\GFGCHES\image-3(1).webp"</a>
+      <a href="second_page.html">C:\Users\GFGCHES\Downloads</a>
+      <a href="second_page.html">C:\Users\GFGCHES\Downloads</a>
+      <a href="second_page.html">C:\Users\GFGCHES\Downloads</a>
+    </div>
+  </div>
+</body>
+</html>
+
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+Darshdarshankm/Darshdarshankm is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
